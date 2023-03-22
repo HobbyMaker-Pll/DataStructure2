@@ -1,0 +1,58 @@
+# Project: DataStructureProject
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = main.o Ex01.o Ex02.o Ex03.o Ex04.o Ex05.o Ex06.o Ex07.o Ex08.o Ex09.o Ex10_11.o
+LINKOBJ  = main.o Ex01.o Ex02.o Ex03.o Ex04.o Ex05.o Ex06.o Ex07.o Ex08.o Ex09.o Ex10_11.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = DataStructureProject.exe
+CXXFLAGS = $(CXXINCS) -std=c99 -g3
+CFLAGS   = $(INCS) -std=c99 -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+Ex01.o: Ex01.c
+	$(CC) -c Ex01.c -o Ex01.o $(CFLAGS)
+
+Ex02.o: Ex02.c
+	$(CC) -c Ex02.c -o Ex02.o $(CFLAGS)
+
+Ex03.o: Ex03.c
+	$(CC) -c Ex03.c -o Ex03.o $(CFLAGS)
+
+Ex04.o: Ex04.c
+	$(CC) -c Ex04.c -o Ex04.o $(CFLAGS)
+
+Ex05.o: Ex05.c
+	$(CC) -c Ex05.c -o Ex05.o $(CFLAGS)
+
+Ex06.o: Ex06.c
+	$(CC) -c Ex06.c -o Ex06.o $(CFLAGS)
+
+Ex07.o: Ex07.c
+	$(CC) -c Ex07.c -o Ex07.o $(CFLAGS)
+
+Ex08.o: Ex08.c
+	$(CC) -c Ex08.c -o Ex08.o $(CFLAGS)
+
+Ex09.o: Ex09.c
+	$(CC) -c Ex09.c -o Ex09.o $(CFLAGS)
+
+Ex10_11.o: Ex10_11.c
+	$(CC) -c Ex10_11.c -o Ex10_11.o $(CFLAGS)
