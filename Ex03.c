@@ -3,7 +3,7 @@
 
 
 
-int main_Pointers()
+int main_Pointers(int sub)
 {
 	int a = 25;
 	int *pa = &a;

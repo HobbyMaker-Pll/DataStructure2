@@ -18,7 +18,7 @@ int factorialRecursive(int number){
     return (factorialRecursive(number-1)*number);
 }
 
-void main_Factorial(){
+void main_Factorial(int sub){
   
     int n;
 

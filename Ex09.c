@@ -6,7 +6,7 @@ int sequentialSum(int number){
     if (number==0) return number; 
     return number+sequentialSum(number-1);
 }
-void main_Sum(){
+void main_Sum(int sub){
   
     int n;
 

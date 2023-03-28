@@ -8,7 +8,7 @@ float imc(float mass, float height)
 	return (mass/pow(height,2));
 }
 
-int main_IMC()
+int main_IMC(int sub)
 {
 	float m, h, ret;
 	

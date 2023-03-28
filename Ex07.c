@@ -36,7 +36,7 @@ void registerEmployee(int id, employee* ret)
 	system("cls");
 }
 
-int main_EmployeeAlocation()
+int main_EmployeeAlocation(int sub)
 {
 	employee* employees;
 	int size, i;

@@ -91,7 +91,7 @@ LinkedList* copyList(LinkedList* list){
     return newList;   
 }
 
-int main_LinkedList(){
+int main_LinkedList(int sub){
     LinkedList* teste = initLinkedList();
     teste = insertLinkedList(teste, 5);
     teste = insertLinkedList(teste, 6);

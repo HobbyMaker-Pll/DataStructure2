@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int main_DynamicReading()
+int main_DynamicReading(int sub)
 {
 	int arrSize, i, sum=0;
 	int* arr;
