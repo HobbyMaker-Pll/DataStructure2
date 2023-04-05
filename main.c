@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "stack.h"
 
 int main_Duplicates(int sub); // Ex1
 int main_SecondDegree(int sub); // EX2
@@ -16,7 +17,7 @@ int main_List2();
 
 
 int main(int argc, char *argv[]) {
-	main_List2();
+	main_stack(0);
 	
 	return 0;
 }
